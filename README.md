@@ -46,3 +46,25 @@ Dentro da função, declara uma variável nomeUser e a inicializa com o valor do
 ### if(nomeUser)
 
 Verifica se a variável nomeUser não está vazia (ou seja, se o usuário digitou algum texto). O código dentro do if será executado se essa condição for verdadeira.
+
+###  dadosLista.push(nomeUser);
+
+Adiciona o valor de nomeUser ao array dadosLista usando o método push(), que adiciona um item ao final do array.
+
+###  console.log(dadosLista);
+
+Exibe o conteúdo atual do array dadosLista no console. Isso é útil para depuração, para verificar se o nome foi corretamente adicionado ao array.
+
+###  criaLista();
+
+Chama a função criaLista() para atualizar a exibição da lista de nomes na página. Essa função irá criar e mostrar uma lista HTML com os nomes armazenados no array.
+
+### document.getElementById('nomeUser').value = "";
+
+ Limpa o campo de entrada nomeUser após o nome ser salvo, definindo seu valor como uma string vazia.
+
+ ### else alert("Favor, informar um nome para cadastro");
+
+Se o campo de entrada estiver vazio (ou seja, a condição do if não for verdadeira), exibe uma mensagem de alerta pedindo para o usuário informar um nome para cadastro.
+
+### 
