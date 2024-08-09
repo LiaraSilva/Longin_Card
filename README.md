@@ -27,3 +27,6 @@ Se a condição do if for verdadeira (ou seja, algum campo estiver vazio), exibe
 
 Se ambos os campos estiverem preenchidos, o navegador será redirecionado para a página cadastro.html.
 
+### Função criador de Arrey para armazenamento de nomes
+
+<img src="ar.png">
