@@ -111,3 +111,23 @@ Usa o método deleteRow do objeto HTMLTableElement para remover a linha da tabel
 
 ## Função para editar Nnome da Lista
 
+<img src="ren.png">
+
+### function editar(i)
+
+Define a função editar que recebe um argumento i, que representa o índice da linha da tabela a ser editada.
+
+### document.getElementById("nomeUser").value = dadosLista[(i - 1)]
+
+Define o valor do campo de entrada com o id nomeUser para o valor do nome correspondente ao índice i - 1 no array dadosLista. Isso preenche o campo de entrada com o nome que pode ser editado pelo usuário. O índice i - 1 é usado para ajustar a diferença entre os índices da tabela (começando do 1) e do array (começando do 0).
+
+### dadosLista.splice(dadosLista[(i - 1)], 1);
+
+Remove o nome do array para que ele não apareça mais na tabela
+
+### Splice
+
+O método splice em JavaScript é uma função poderosa e versátil usada para modificar arrays. Ele pode adicionar, remover e substituir elementos dentro de um array. 
+
+# Resultado:
+
