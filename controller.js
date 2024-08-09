@@ -45,3 +45,4 @@ function editar(i){
     document.getElementById("nomeUser").value = dadosLista [(i - 1)];
     dadosLista.splise(dadosLista[(i - 1)], 1)
 }
+splise
