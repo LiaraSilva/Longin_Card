@@ -109,7 +109,7 @@ Define a função excluir, que aceita um argumento i. Esse argumento representa 
 
 Usa o método deleteRow do objeto HTMLTableElement para remover a linha da tabela na página. O método deleteRow remove uma linha da tabela HTML com base no índice especificado. No caso, i é o índice da linha a ser removida.
 
-## Função para editar Nnome da Lista
+## Função para editar Nome da Lista
 
 <img src="ren.png">
 
