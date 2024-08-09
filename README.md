@@ -67,4 +67,47 @@ Chama a função criaLista() para atualizar a exibição da lista de nomes na p�
 
 Se o campo de entrada estiver vazio (ou seja, a condição do if não for verdadeira), exibe uma mensagem de alerta pedindo para o usuário informar um nome para cadastro.
 
-### 
+## Função decriação de Lista
+
+<img src="a.png">
+
+### let tabela = document.getElementById("tabela").innerHTML = "<tr><th>Nome Usuário</th><th>Ações</th></tr>";
+
+ Esse código obtém o elemento HTML com o id tabela e define seu innerHTML inicial com um cabeçalho de tabela (<tr><th>Nome Usuário</th><th>Ações</th></tr>). Esse cabeçalho define as colunas da tabela: uma para o nome do usuário e outra para ações (editar e excluir). O valor de innerHTML é armazenado na variável tabela.
+
+ ### for(let i = 0; i <= (dadosLista.length - 1); i++)
+
+ Inicia um loop for que itera sobre cada índice do array dadosLista. A condição i <= (dadosLista.length - 1) garante que o loop percorra todos os elementos do array.
+
+ ### tabela += "<tr><td>" + dadosLista[i] +"</td><td><button // type='button' onclick='editar(parentNode.parentNode.rowIndex)'>Editar</button><button // type='button' onclick='excluir(parentNode.parentNode.rowIndex)'>Excluir</button></td></tr>";
+
+ Adiciona uma nova linha (<tr>) à variável tabela para cada nome no array dadosLista. Cada linha da tabela contém:
+* Uma célula (<td>) com o nome atual do array (dadosLista[i]).
+* Uma célula com dois botões:
+* Editar: Um botão que chama a função editar passando o índice da linha (parentNode.parentNode.rowIndex), que representa a linha onde o botão foi clicado.
+* Excluir: Um botão que chama a função excluir também passando o índice da linha (parentNode.parentNode.rowIndex).
+
+### document.getElementById("tabela"). innerHTML = tabela;
+
+Define o innerHTML do elemento com o id tabela para o valor da variável tabela. Isso atualiza a tabela na página com todas as linhas (nomes e botões) que foram adicionadas no loop.
+
+## Função para excluir Nome de lista 
+
+<img src="ka.png">
+
+### function excluir(i)
+
+Define a função excluir, que aceita um argumento i. Esse argumento representa o índice da linha da tabela que deve ser excluída. A função é chamada quando o usuário clica no botão "Excluir" correspondente a uma linha na tabela.
+
+### dadosLista.splice((i - 1), 1);
+
+ Usa o método splice do array dadosLista para remover um item do array. O método splice modifica o array original. Aqui está o que os parâmetros fazem:
+* (i - 1): Especifica o índice no array onde a remoção deve começar. Como i é o índice da linha da tabela e o array dadosLista pode ser indexado a partir de zero, você precisa subtrair 1 para obter o índice correto no array.
+* 1: O número de itens a serem removidos a partir do índice especificado. Neste caso, está removendo apenas um item.
+
+### document.getElementById('tabela').deleteRow(i);
+
+Usa o método deleteRow do objeto HTMLTableElement para remover a linha da tabela na página. O método deleteRow remove uma linha da tabela HTML com base no índice especificado. No caso, i é o índice da linha a ser removida.
+
+## Função para editar Nnome da Lista
+
