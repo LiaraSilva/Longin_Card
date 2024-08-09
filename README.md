@@ -26,3 +26,4 @@ Se a condição do if for verdadeira (ou seja, algum campo estiver vazio), exibe
 ### window.location.href = 'cadastro.html';
 
 Se ambos os campos estiverem preenchidos, o navegador será redirecionado para a página cadastro.html.
+
