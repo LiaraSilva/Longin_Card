@@ -30,3 +30,19 @@ Se ambos os campos estiverem preenchidos, o navegador será redirecionado para a
 ### Função criador de Arrey para armazenamento de nomes
 
 <img src="ar.png">
+
+### var dadosLista = [];
+
+Inicia como um array vazio. Este array será usado para armazenar os nomes inseridos pelo usuário.
+ 
+ ### function salvarUser ()
+
+A função salvarUser, que será chamada quando o usuário deseja salvar um nome.
+
+### let nomeUser = document.getElementById('nomeUser').value;
+
+Dentro da função, declara uma variável nomeUser e a inicializa com o valor do campo de entrada com o id nomeUser. A função document.getElementById('nomeUser').value recupera o valor digitado pelo usuário no campo de entrada.
+
+### if(nomeUser)
+
+Verifica se a variável nomeUser não está vazia (ou seja, se o usuário digitou algum texto). O código dentro do if será executado se essa condição for verdadeira.
