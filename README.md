@@ -7,3 +7,14 @@ O projeto é uma aplicação web simples que valida os campos preenchidos de ent
 
 <img src="Li.png" alt="Texto Alternativo">
 
+### let loginEmail = document.getElementById('loginEmail').value;
+
+Obtém o valor do campo de entrada (input) com o id loginEmail e o armazena na variável loginEmail.
+
+### let loginSenha = document.getElementById('loginSenha').value;
+
+Obtém o valor do campo de entrada (input) com o id loginSenha e o armazena na variável loginSenha.
+
+### if(!loginEmail || !loginSenha)
+
+Verifica se qualquer um dos valores (loginEmail ou loginSenha) está vazio ou undefined. Se um dos valores for falso (ou seja, vazio), a condição é verdadeira.
