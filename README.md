@@ -131,3 +131,4 @@ O método splice em JavaScript é uma função poderosa e versátil usada para m
 
 # Resultado:
 
+<img src="amor.png">
