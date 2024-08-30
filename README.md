@@ -129,15 +129,14 @@ Remove o nome do array para que ele não apareça mais na tabela
 
 O método splice em JavaScript é uma função poderosa e versátil usada para modificar arrays. Ele pode adicionar, remover e substituir elementos dentro de um array. 
 
-### Alterações 
-
-<img src="u.png">
-
-Adicionamos o termo email para que as pessoas consigam colocar o email valido e se não estiver o @ ou o . ele ira alertar um aviso para a pessoa coloque um email valido.
-
 # Resultado:
 
 <img src="amor.png">
+
+# Alterações Email 
+
+<img src="u.png">
+
 
 # Novo Ajustamento:
 
