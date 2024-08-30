@@ -133,10 +133,55 @@ O método splice em JavaScript é uma função poderosa e versátil usada para m
 
 <img src="amor.png">
 
-# Alterações Email 
+# Alterações Email e CPF
 
 <img src="u.png">
 
+## Primeira alteração do Email
+
+<img src="anjo.png">
+
+### function validarEmail(email)
+
+A função validarEmail é projetada para verificar se o valor passado para o parâmetro email atende a um padrão específico (neste caso, o padrão de um e-mail válido).
+
+### const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+* ^[a-zA-Z0-9._%+-]+: Indica o início da string e define o padrão para a parte local do e-mail. Permite letras (maiúsculas e minúsculas), números, e alguns caracteres especiais (., _, %, +, -).
+* @[a-zA-Z0-9.-]+: Depois do caractere @, deve haver um ou mais caracteres alfanuméricos, pontos ou hífens, que compõem a parte do domínio.
+* \.[a-zA-Z]{2,}$: Um ponto literal seguido por duas ou mais letras (o domínio de nível superior), e garante que a correspondência ocorra até o final da string ($).
+
+### return regex.test(email);
+
+Retorna o resultado da aplicação da expressão regular ao parâmetro email
+
+# Primeira alteração do CPF
+
+<img src="mu.png">
+
+### function validarCPF(cpf)
+
+A função validarCPF é projetada para verificar se o valor passado para o parâmetro cpf está no formato correto de um CPF.
+
+### const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+
+* '^': Indica o início da string.
+* '\d{3}': Três dígitos numéricos. A sequência \d representa um dígito (0-9) e {3} especifica que deve haver exatamente três desses dígitos.
+* '\.': Um ponto literal. O caractere \ é usado para escapar o ponto, que é um caractere especial em expressões regulares.
+* '\d{3}': Outro grupo de três dígitos numéricos.
+* '\.': Outro ponto literal.
+* '\d{3}': Outro grupo de três dígitos numéricos.
+* '-': Um hífen literal.
+* '\d{2}': Dois dígitos numéricos.
+* '$': Indica o final da string.
+
+### return regex.test(cpf);
+
+ Usa o método test da expressão regular para verificar se o valor de cpf corresponde ao padrão definido pela regex. Retorna true se a correspondência for encontrada e false se não for.
+
+ # Segunda alteração do Email e CPF:
+
+ 
 
 # Novo Ajustamento:
 
