@@ -225,8 +225,6 @@ Nessa parte só adiconei a código de Email e CPF que acaba fazendo a mesma cois
 
 # Resultado final:
 
-
-
-
+<img src="resultado.png">
 
 -[Liara Silva](https://github.com/LiaraSilva?tab=repositories)
