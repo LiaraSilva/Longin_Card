@@ -181,10 +181,51 @@ A função validarCPF é projetada para verificar se o valor passado para o par�
 
  # Segunda alteração do Email e CPF:
 
+ <img src="si.png">
+
+ ### function limparFormulario()
+
+ A função limparFormulario será usada para limpar (ou redefinir) os valores dos campos de um formulário HTML
+
+ ### document.getElementById('nomeUser').value = ""; document.getElementById('emailUser').value = ""; document.getElementById('cpfUser').value = "";
  
+ seleciona o elemento do DOM com o ID nomeUser, emailUser e cpfUser. Normalmente, isso seria um campo de entrada (input) de um formulário.
+
+ # Terceira alteração do Email e CPF:
+
+ <img src="ca.png">
+
+### if (nomeUser && emailUser && cpfUser)
+
+Define uma função chamada adicionarUsuario que aceita três parâmetros: nomeUser, emailUser, e cpfUser. Estes parâmetros representam as informações do usuário a serem adicionadas.
+
+### validarEmail(emailUser) && validarCPF(cpfUser)
+
+Se todos os parâmetros estiverem preenchidos, esta linha chama as funções validarEmail e validarCPF para verificar se o email e o CPF fornecidos são válidos.
+
+### dadosLista.push({ nome: nomeUser, email: emailUser, cpf: cpfUser });
+
+Adiciona um novo objeto contendo nome, email, e cpf à lista dadosLista. Esta lista deve ser uma variável global ou definida em algum lugar fora desta função.
+
+### limparFormulario()
+
+Chama a função limparFormulario para limpar os campos do formulário após o usuário ser adicionado à lista.
+
+### else  alert("Favor, informar um email e um CPF válidos.");
+
+Se a validação do email ou do CPF falhar, exibe um alerta pedindo para informar um email e um CPF válidos.
+
+### else alert("Favor, informar nome, email e CPF para cadastro.");
+
+Se qualquer um dos parâmetros (nomeUser, emailUser, cpfUser) estiver ausente, exibe um alerta pedindo para informar todos os dados necessários para o cadastro.
+
+<img src="nha.png">
+
+Nessa parte só adiconei a código de Email e CPF que acaba fazendo a mesma coisa que ja expliquei a cima com o nome de usuaria que vai ajudar a editar.
+
 
 # Novo Ajustamento:
 
-<img src="da.png">
+
 
 -[Liara Silva](https://github.com/LiaraSilva?tab=repositories)
