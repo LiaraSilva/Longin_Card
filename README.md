@@ -223,8 +223,9 @@ Se qualquer um dos parâmetros (nomeUser, emailUser, cpfUser) estiver ausente, e
 
 Nessa parte só adiconei a código de Email e CPF que acaba fazendo a mesma coisa que ja expliquei a cima com o nome de usuaria que vai ajudar a editar.
 
+# Resultado final:
 
-# Novo Ajustamento:
+
 
 
 
